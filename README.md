@@ -24,11 +24,10 @@ https://github.com/maxblaul/search-a-book-mern-maxblaul
 
 ## Screenshot
 
-![Screenshot](<Screenshot (30).png>)
+![Screenshot](<Screenshot (31).png>)
 
-
-I can't get the link to work yet, there's something not right with the Database connection. Working with a tutor tomorrow to fix the issue.
+Can only get it running on local host, need to figure out what is wrong with server.
 
 ## Resources
 
-Google, Youtube, Module21 Activity-28 Mini Project, Chatgpt for syntax help and error catching.
+Google, Youtube, Module21 Activity-28 Mini Project, Chatgpt for syntax help and error catching. Also had tons of great help from the tutor Dennis Itua. 
