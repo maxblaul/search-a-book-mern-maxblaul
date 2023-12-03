@@ -1,4 +1,4 @@
-const typdeDefs = `
+const typeDefs = `
 type User {
     _id: ID!
     username: String
@@ -43,6 +43,6 @@ type Mutation {
 
 `;
 
-module.exports = typdeDefs;
+module.exports = typeDefs;
 
 // Defining Query and Mutation types
