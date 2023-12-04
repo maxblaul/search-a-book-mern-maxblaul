@@ -24,10 +24,10 @@ https://github.com/maxblaul/search-a-book-mern-maxblaul
 
 ## Screenshot
 
-![Screenshot](<Screenshot (31).png>)
+![Screenshot](<Screenshot (33).png>)
 
-Can only get it running on local host, need to figure out what is wrong with server.
+Its working except for the save.
 
 ## Resources
 
-Google, Youtube, Module21 Activity-28 Mini Project, Chatgpt for syntax help and error catching. Also had tons of great help from the tutor Dennis Itua. 
+Google, Youtube, Module21 Activity-28 Mini Project, Chatgpt for syntax help and error catching. Also had tons of great help from the tutors Dennis Itua and Phil Loy. 
