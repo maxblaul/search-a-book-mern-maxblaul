@@ -61,10 +61,10 @@ const SearchBooks = () => {
       console.error(err);
     }
   };
-const token = Auth.loggedIn() ? Auth.getToken() : null;
-const [saveBook, {error, data }] = useMutation(SAVE_BOOK, {
-  variables: token
-});
+  const token = Auth.loggedIn() ? Auth.getToken() : null;
+  const [saveBook, { error, data }] = useMutation(SAVE_BOOK, {
+    variables: token
+  });
 
 
   // create function to handle saving a book to our database
@@ -80,16 +80,19 @@ const [saveBook, {error, data }] = useMutation(SAVE_BOOK, {
     }
 
     try {
-      const {data} = await saveBook({
+      const { data } = await saveBook({
         variables: {
-          bookId: bookToSave.bookId,
-          authors: bookToSave.authors,
-          description: bookToSave.description,
-          title: bookToSave.title,
-          image: bookToSave.image,
-          link: bookToSave.link
+          input: {
+            bookId: bookToSave.bookId,
+            authors: bookToSave.authors,
+            description: bookToSave.description,
+            title: bookToSave.title,
+            image: bookToSave.image,
+            link: bookToSave.link
+          }
         }
-      } )
+
+      })
 
       // if (!response.ok) {
       //   throw new Error('something went wrong!');

@@ -1,6 +1,6 @@
 
 const { User, Book } = require('../models');
-const { signToken, AuthenticationError } = require('../utils/auth');
+const { signToken,  AuthenticationError } = require('../utils/auth');
 
 const resolvers = {
     Query: {
@@ -36,12 +36,13 @@ const resolvers = {
         },
 
         saveBook: async (parent, { input }, context) => {
+            console.log(input);
             if (context.user) {
                 const updatedUser = await User.findOneAndUpdate(
                     { _id: context.user._id },
                     { $addToSet: { savedBooks: input } },
                     { new: true }
-                ).populate('savedBooks');
+                );
 
                 return updatedUser;
             }
